@@ -1,0 +1,10 @@
+-r requirements.txt
+bandit
+yapf
+flake8
+flake8-comprehensions
+flake8-strict
+flake8-bugbear
+pytest
+pytest-cov
+pyenchant
