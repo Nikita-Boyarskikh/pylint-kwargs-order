@@ -6,7 +6,7 @@ import sys
 from setuptools.command.test import test as TestCommand
 
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 
 class TestAndLintCommand(TestCommand):
@@ -48,6 +48,7 @@ setuptools.setup(
     url='https://github.com/Nikita-Boyarskikh/pylint-args',
     install_requires=requirements,
     tests_require=requirements + test_requirements[1:],
+    include_package_data=True,
     cmdclass={'test': TestAndLintCommand},
     license='MIT',
     data_files=[
